@@ -17,9 +17,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.junaidahmed57.tictactoe.R
+import com.junaidahmed57.tictactoe.ui.theme.TikTakToeTheme
 
 @Composable
 fun TicTacToeApp(viewModel: GameViewModel = androidx.lifecycle.viewmodel.compose.viewModel()){
@@ -82,5 +84,11 @@ fun TicTacToeApp(viewModel: GameViewModel = androidx.lifecycle.viewmodel.compose
 
 }
 
-
+@Preview
+@Composable
+fun PreviewTicTacToe() {
+    TikTakToeTheme {
+        TicTacToeApp()
+    }
+}
 

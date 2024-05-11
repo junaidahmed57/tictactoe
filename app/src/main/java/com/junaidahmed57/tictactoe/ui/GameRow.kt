@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -24,22 +25,22 @@ fun GameRow(row: Int, selections: List<Pair<String, Int>>, onClicked: (Int) -> U
         3 -> boxValue = listOf(6,7,8)
     }
     Row{
-        DrawXOrY(id = boxValue[0], draw = selections[boxValue[0]].first, onClicked = onClicked)
+        DrawXOrO(id = boxValue[0], draw = selections[boxValue[0]].first, onClicked = onClicked)
         Spacer(modifier = Modifier
             .height(108.dp)
             .width(8.dp)
             .background(Color.White))
-        DrawXOrY(id = boxValue[1], draw = selections[boxValue[1]].first, onClicked = onClicked)
+        DrawXOrO(id = boxValue[1], draw = selections[boxValue[1]].first, onClicked = onClicked)
         Spacer(modifier = Modifier
             .height(108.dp)
             .width(8.dp)
             .background(Color.White))
-        DrawXOrY(id = boxValue[2], draw = selections[boxValue[2]].first, onClicked = onClicked)
+        DrawXOrO(id = boxValue[2], draw = selections[boxValue[2]].first, onClicked = onClicked)
     }
 }
 
 @Composable
-fun DrawXOrY(modifier: Modifier = Modifier, id: Int, draw: String = "", onClicked: (Int) -> Unit = {}){
+fun DrawXOrO(modifier: Modifier = Modifier, id: Int, draw: String = "", onClicked: (Int) -> Unit = {}){
     Text(
         text = draw,
         fontSize = 80.sp,
@@ -51,4 +52,10 @@ fun DrawXOrY(modifier: Modifier = Modifier, id: Int, draw: String = "", onClicke
             .height(96.dp)
             .clickable { if (draw.isEmpty()) onClicked(id) }
     )
+}
+
+@Preview
+@Composable
+fun XOPreview() {
+    DrawXOrO(id = 1, draw = "X")
 }
