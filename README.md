@@ -1,3 +1,7 @@
+<div align="center">
+<img width="200" src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" alt="TicTacToe">
+</div>
+
 ## TicTacToe with Jetpack Compose
 This repository contains a simple TicTacToe game implemented using Kotlin and Jetpack Compose. The game allows two players to play the classic XO (Tic-Tac-Toe) game together. Let's dive into the details:
 ### Features
@@ -10,7 +14,13 @@ This repository contains a simple TicTacToe game implemented using Kotlin and Je
 - Players take turns marking a square with their symbol (either "X" or "O").
 - The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 - If all 9 squares are filled and no player has won, the game ends in a draw.
-### Preview
+### Screenshots
+
+<img src="https://github.com/junaidahmed57/tictactoe-game/assets/32070197/ef648c4c-ebd7-4440-969b-e7da1601c586" width="17%" >
+<img src="https://github.com/junaidahmed57/tictactoe-game/assets/32070197/bf8b3c0c-4df7-4923-b16c-7a39a04e8c07" width="17%" >
+<img src="https://github.com/junaidahmed57/tictactoe-game/assets/32070197/e050e6a2-6687-4c2d-9e85-1b7c06179ca6" width="17%" >
+<img src="https://github.com/junaidahmed57/tictactoe-game/assets/32070197/9600c7bc-8b88-48bd-831a-2d9249aa966e" width="17%" >
+
 ### Getting Started 
 - Clone this repository to your local machine.
 - Open the project in Android Studio.
